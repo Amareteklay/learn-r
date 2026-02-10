@@ -1,5 +1,7 @@
 # scripts/00_setup.R
-# Minimal setup helpers for your repo
+# Minimal setup helpers for your repo (works in Rscript/non-interactive)
+
+options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 required <- c("tidyverse")
 installed <- rownames(installed.packages())
